@@ -259,11 +259,41 @@ header .wrapper i{
   color: rgba(0, 0, 0, 0.514);
   width: 23%;
   height: 50px;
-  border: 1px solid red;
   font-size: 12px;
   text-align: center;
   line-height: 50px;
 }
-#a{
+#READ{
   margin-left:25% ;
+  background-color: rgb(255,255,255);
+  color: rgb(59,59,59);
+}
+#BOOK{
+  background-color: rgb(255,228,0);
+    color: rgb(59,59,59);
+}
+.summit_info ul li{
+  width: 50%;
+  height: 70px;
+  float: left;
+  position: relative;
+  top: 45px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  
+}
+.summit_info ul li i{
+  width: 25%;
+  text-align: center;
+  height: 68px;
+  display: inline-block;
+  border: 1px solid black;
+  line-height: 65px;
+}
+
+.summit_booking .wrapper img{
+  width: 50%;
+  height:  415px;;
 }
