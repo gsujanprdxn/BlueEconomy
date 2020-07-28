@@ -237,7 +237,6 @@ header .wrapper i{
 }
 .summit_info h3{
   box-sizing: border-box;
-  border: 1px solid black;
   text-align: center;
   padding-top: 70px;
   padding-bottom: 50px;
@@ -245,4 +244,26 @@ header .wrapper i{
   font-size: 25px;
   font-weight: 900;
   color: rgb(246,255,247);
+}
+.summit_info p{
+  box-sizing: border-box;
+  font-size: 15px;
+  padding: 0px 10% 60px 10%;
+  color: rgb(246,255,247);
+  text-align: center;
+  opacity: 1.5;
+}
+.summit_info a{
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.514);
+  width: 23%;
+  height: 50px;
+  border: 1px solid red;
+  font-size: 12px;
+  text-align: center;
+  line-height: 50px;
+}
+#a{
+  margin-left:25% ;
 }
