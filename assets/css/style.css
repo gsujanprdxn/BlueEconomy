@@ -295,5 +295,106 @@ header .wrapper i{
 
 .summit_booking .wrapper img{
   width: 50%;
-  height:  415px;;
+  height:  415px;
+}
+
+.featured_article .wrapper > h2{
+  text-align: center;
+  height: 218px;
+  line-height: 218px;
+  font-size: 20px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 900;
+  letter-spacing: 10px;
+  color: rgb(164,164,164);
+}
+.featured_article{
+  height: 777px;
+}
+.article_list{
+  height: 560px;
+  width: 40%;
+  float: left;
+  overflow-y: scroll;
+}
+
+.article_list ul li{
+  border: 1px solid rgb(223,223,223);
+  box-sizing: border-box;
+  width: 56%;
+  margin-left: 39%;
+  margin-top: 8px;
+  margin-right: 8px;
+  padding: 10px;
+  list-style: none;
+  height: 70px;
+
+}
+.article_list ul li h3{
+  font-size: 12px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 900;
+  padding-bottom: 12px; 
+  color: rgb(58,66,68);
+}
+.article_details{
+  position: relative;
+  width: 41%;
+  height: 380px;
+  background-color: rgb(220,228,230);
+  float: left;
+  margin-left: 64px;
+  margin-top: 8px;
+  padding: 40px;
+}
+.article_details h3{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+.article_details h2{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.article_details p{
+  position: absolute;
+  top: 40%;
+  text-align: left;
+  margin-right: 40px;
+  line-height: 30px;
+  color: rgb(79,87,89);
+}
+a{
+  border: 1px solid rgb(184,180,135);
+  text-align: center;
+}
+#Ecomomist_unit{
+  position: absolute;
+  bottom: 15%;
+  left: 8%;
+  text-decoration: none;
+  width: 42%;
+  height: 28px;
+  line-height: 28px;
+  background: inherit;
+  color: rgb(79,87,89);
+}
+.article_details i{
+  float: left;
+  line-height:28px;
+  width: 32px;
+  background-color: rgb(184,180,135);
+}
+#Read_More{
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+  text-decoration: none;
+  width: 28%;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgb(255,255,255);
+  border: none;
+  color: rgb(79,87,89);
 }
