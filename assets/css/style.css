@@ -36,7 +36,7 @@
   * Remove the following color code and add your own as this is just and 
   * example to let you know)
 
-  Header nav: #e5e5df (Cararra)
+  Header nav: :rgb(255,255,255);
   Header nav a (hover): #fff (white)
   Header nav a (active): #fff (white)
 -------------------------------------------------------------------*/
@@ -165,27 +165,25 @@ header .wrapper{
   padding: 5px 40px;
   flex-wrap: wrap;
 }
+
 nav ul li{
   display: inline-block;
   padding: 0px 10px;
   color: rgb(148,148,148);
   font-size: 12px;
 }
-nav ul{
-  list-style: none;
-}
-header .wrapper h1{
-  flex-grow: 0.25;
-}
-header .wrapper i{
-  color: rgb(148,148,148);
-}
+
+nav ul{list-style: none;}
+header .wrapper h1{flex-grow: 0.25;}
+header .wrapper i{color: rgb(148,148,148);}
+
 .banner .wrapper{
   width: 100%;
   height: 575px;
   position: relative;
   border: 1px solid black;
 }
+
 .heading_frame{
   width: 39%;
   height: 360px;
@@ -206,8 +204,8 @@ header .wrapper i{
   font-family: 'Hind', sans-serif;
   font-weight: 800;
   color: rgb(246,255,247);
-
 }
+
 .about_frame{
   width: 53%;
   height: 360px;
@@ -219,22 +217,26 @@ header .wrapper i{
   align-items: center;
   color: rgb(246,255,247);
 }
+
 .about_frame p{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .summit_booking{
   width: 100%;
   height: 415px;
 }
+
 .summit_info{
   width: 50%;
   height: 415px;
   float: left;
   background-color: rgb(95,172,214);
 }
+
 .summit_info h3{
   box-sizing: border-box;
   text-align: center;
@@ -245,6 +247,7 @@ header .wrapper i{
   font-weight: 900;
   color: rgb(246,255,247);
 }
+
 .summit_info p{
   box-sizing: border-box;
   font-size: 15px;
@@ -253,6 +256,7 @@ header .wrapper i{
   text-align: center;
   opacity: 1.5;
 }
+
 .summit_info a{
   text-decoration: none;
   display: inline-block;
@@ -263,27 +267,30 @@ header .wrapper i{
   text-align: center;
   line-height: 50px;
 }
+
 #READ{
   margin-left:25% ;
   background-color: rgb(255,255,255);
   color: rgb(59,59,59);
 }
+
 #BOOK{
   background-color: rgb(255,228,0);
-    color: rgb(59,59,59);
+  color: rgb(59,59,59);
 }
+
 .summit_info ul li{
   width: 50%;
   height: 70px;
   float: left;
   position: relative;
-  top: 45px;
+  top: 43px;
   border: 1px solid black;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none;
-  
+  list-style: none; 
 }
+
 .summit_info ul li i{
   width: 25%;
   text-align: center;
@@ -308,14 +315,24 @@ header .wrapper i{
   letter-spacing: 10px;
   color: rgb(164,164,164);
 }
-.featured_article{
-  height: 777px;
-}
+
+.featured_article{height: 777px;}
+
 .article_list{
   height: 560px;
   width: 40%;
   float: left;
   overflow-y: scroll;
+  position: relative;
+}
+.article_list::before{
+  content: '';
+  position: absolute;
+  left: 30%;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(164,164,164);
+
 }
 
 .article_list ul li{
@@ -328,8 +345,18 @@ header .wrapper i{
   padding: 10px;
   list-style: none;
   height: 70px;
-
 }
+
+.article_list ul li::before{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: lightcoral;
+  border-radius: 50%;
+  left: 153px;
+}
+
 .article_list ul li h3{
   font-size: 12px;
   font-family: 'Hind', sans-serif;
@@ -337,6 +364,7 @@ header .wrapper i{
   padding-bottom: 12px; 
   color: rgb(58,66,68);
 }
+
 .article_details{
   position: relative;
   width: 41%;
@@ -347,16 +375,19 @@ header .wrapper i{
   margin-top: 8px;
   padding: 40px;
 }
+
 .article_details h3{
   position: absolute;
   top: 10%;
   right: 10%;
 }
+
 .article_details h2{
   position: absolute;
   top: 10%;
   left: 10%;
 }
+
 .article_details p{
   position: absolute;
   top: 40%;
@@ -365,10 +396,13 @@ header .wrapper i{
   line-height: 30px;
   color: rgb(79,87,89);
 }
-a{
+
+
+.article_details a{
   border: 1px solid rgb(184,180,135);
   text-align: center;
 }
+
 #Ecomomist_unit{
   position: absolute;
   bottom: 15%;
@@ -380,12 +414,14 @@ a{
   background: inherit;
   color: rgb(79,87,89);
 }
+
 .article_details i{
   float: left;
   line-height:28px;
   width: 32px;
   background-color: rgb(184,180,135);
 }
+
 #Read_More{
   position: absolute;
   bottom: 10%;
@@ -397,4 +433,139 @@ a{
   background-color: rgb(255,255,255);
   border: none;
   color: rgb(79,87,89);
+}
+
+.infographics .wrapper > h2{
+  width: 100%;
+  height: 218px;
+  line-height: 218px;
+  font-size: 20px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 900;
+  letter-spacing: 10px;
+  color: rgb(164,164,164);
+}
+
+footer .wrapper{
+  width: 100%;
+  height: 115px;
+  background-color: rgb(46,46,46);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .wrapper ul{
+  display: flex;
+  list-style: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 20%;
+  top: 50%;
+}
+
+footer .wrapper ul li{
+  margin-left: 20px;
+  font-size: 25px;
+  color: rgb(124,124,124);
+}
+
+.contact_us{
+  position: absolute;
+  right: 10px;
+  height: 50px;
+  text-align: center;
+  width: 180px;
+  line-height: 50px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  background-color: rgb(122,122,122);
+  color: rgb(237,237,237);
+  text-decoration: none;
+}
+
+footer .wrapper h3{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 8%;
+  top: 50%;
+  color: rgb(124,124,124);
+  font-size: 17px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 600;
+}
+
+.newsletter .wrapper{
+  width: 100%;
+  height: 207px;
+  background-color: rgb(95,178,222);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+input[type="email"] {
+  width: 50%;
+  padding: 5px;
+  height: 62px;
+}
+
+input[type="submit"] {
+  background-color: #00d188;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
+  width: 5%;
+}
+
+.subcribe{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 500px;
+  height: 65px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+} 
+
+.infographics .wrapper{
+  height: 752px;
+  width: 100%;
+  /* overflow-x: scroll; */
+}
+
+.infographics .wrapper ul li{
+  display: inline-block;
+  position: relative;
+  height: 760px;
+  width: 475px;
+  margin-left: 10px;
+}
+
+.newsletter .wrapper h3{
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  text-align: center;
+}
+
+.infographics .wrapper ul img{
+  position: absolute;
+  z-index: -1;
+}
+.infographics .wrapper ul li div{
+  width: 357px;
+  height: 282px;
+  border: 1px solid black;
+  position: absolute;
+  top: 200px;
+  left: 60px;
+  background-color: rgb(232,239,245);
+  opacity: 0.5;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 50px;
 }
